@@ -1,0 +1,15 @@
+Routing render confirms all signal nets connect cleanly on F.Cu/B.Cu, weaving around the socket columns; the inner GND/+5V planes carry power (power-type layers render empty, as expected). The board is complete and saved to disk.
+
+## Zusammenfassung — RPi-DroneRover-HAT (65×56 mm, 4-lagig, THT)
+
+**Gebaut:** Raspberry-Pi-HAT mit 40-pin-Pi-Header (J_PI 2×20, Unterkante), GY-521-IMU-Sockel (J_IMU 1×08, zentral), 4× ESC/Servo-PWM-Header (J_M1–M4, Oberkante), BEC-5V-Schraubklemme (J_BEC, linke Kurzkante), Verpol­schutzdiode 1N5819, 470 µF-Elko + 100 nF, I²C-Pullups (R_SDA/R_SCL 4k7), Buzzer-Header, Status-LED + 330 Ω. Alle Standard-KiCad-Footprints, komplett THT.
+
+**Alle Bauteile platziert:** JA — alle 15 Bauteile + 4 M2,5-Bohrungen sitzen überlappungsfrei innerhalb des Umrisses mit sichtbarem Abstand (visuell im Render geprüft; kein Teil bei 0,0). Nur EIN Ausreißer nachjustiert (LED1 +2 mm gegen R_LED-Courtyard). `suggest_placement` bewusst übersprungen — es zerstört Sockel-Layouts (in >10 Builds belegt); stattdessen deterministischer Koordinaten-Floorplan, dokumentierte Abweichung.
+
+**4-Lagen-Stackup:** F.Cu(Signal)/In1.Cu(GND-Plane)/In2.Cu(+5V-Plane)/B.Cu(Signal). Inner-Layer per File-Edit auf `power` gesetzt (+ F.Silkscreen-Namenskorruption behoben) → Freerouting hielt Signale konsequent auf F/B.Cu (0 Segmente auf den Planes). Da rein THT: alle GND/+5V-Pins verbinden sich durch die Bohrungen selbst mit den Planes — Step-1c-Stitching-Vias entfielen (verifiziert: kein Power/GND unrouted).
+
+**Routing:** `autoroute` (MCP, synchron 5,2 s), 76 Tracks + 4 Vias, alle 12 Signalnetze (SDA/SCL/INT/4×PWM/LED_DRV/BZ/LED_A/BEC_IN/+3V3) geroutet — jedes per `query_traces` einzeln bestätigt (traceCount>0). GND/+5V bleiben auf den Planes.
+
+**DRC-Status:** **0 Fehler**, 12 Warnungen (2 track_dangling = redundante Freerouting-Stubs, 4 MountingHole-Lib-Nag, 6 Silk) — alle DFM-akzeptabel.
+
+**Gerber/Export:** nicht selbst exportiert (läuft laut Prompt automatisch nach). **Offene Punkte:** keine funktionalen; die 12 Warnungen sind kosmetisch. Die geroutete `.kicad_pcb` ist gespeichert.

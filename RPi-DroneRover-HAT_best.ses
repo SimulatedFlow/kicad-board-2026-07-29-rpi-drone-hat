@@ -1,0 +1,348 @@
+(session "RPi-DroneRover-HAT"
+  (base_design "RPi-DroneRover-HAT")
+  (placement
+    (resolution um 10)
+    (component Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+      (place BZ 100000 -200000 front 0)
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+      (place J_M1 150000 -40000 front 0)
+      (place J_M3 390000 -40000 front 0)
+      (place J_M4 510000 -40000 front 0)
+      (place J_M2 270000 -40000 front 0)
+    )
+    (component Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm
+      (place C_DEC 400000 -400000 front 0)
+    )
+    (component Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical
+      (place J_IMU 300000 -140000 front 0)
+    )
+    (component MountingHole:MountingHole_2.75mm
+      (place MH2 615000 -35000 front 0)
+      (place MH4 615000 -525000 front 0)
+      (place MH3 35000 -525000 front 0)
+      (place MH1 35000 -35000 front 0)
+    )
+    (component Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical
+      (place J_PI 84000 -495000 front 90)
+    )
+    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+      (place R_LED 440000 -300000 front 0)
+      (place R_SCL 440000 -250000 front 0)
+      (place R_SDA 440000 -200000 front 0)
+    )
+    (component Capacitor_THT:CP_Radial_D8.0mm_P3.50mm
+      (place C_BULK 300000 -400000 front 0)
+    )
+    (component LED_THT:LED_D5.0mm
+      (place LED1 560000 -300000 front 0)
+    )
+    (component "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+      (place J_BEC 50000 -320000 front 0)
+    )
+    (component "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+      (place D_PWR 140000 -400000 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version 10.0.4)
+    )
+    (library_out 
+      (padstack "Via[0-3]_600:300_um"
+        (shape
+          (circle F.Cu 6000 0 0)
+        )
+        (shape
+          (circle In1.Cu 6000 0 0)
+        )
+        (shape
+          (circle In2.Cu 6000 0 0)
+        )
+        (shape
+          (circle B.Cu 6000 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-3]_600:300_um"
+        (shape
+          (circle F.Cu 6000 0 0)
+        )
+        (shape
+          (circle In1.Cu 6000 0 0)
+        )
+        (shape
+          (circle In2.Cu 6000 0 0)
+        )
+        (shape
+          (circle B.Cu 6000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net BZ_SIG
+        (wire
+          (path B.Cu 4000
+            100000 -200000
+            86470 -213530
+            86470 -230989
+            213117 -357636
+            403836 -357636
+            541200 -495000
+          )
+        )
+      )
+      (net PWM1
+        (wire
+          (path B.Cu 4000
+            102730 -545660
+            439740 -545660
+            465000 -520400
+          )
+        )
+        (wire
+          (path F.Cu 4000
+            89438 -545660
+            102730 -545660
+          )
+        )
+        (wire
+          (path B.Cu 4000
+            89438 -545660
+            102730 -545660
+          )
+        )
+        (wire
+          (path F.Cu 4000
+            102730 -545660
+            89438 -545660
+          )
+        )
+        (wire
+          (path B.Cu 4000
+            102730 -545660
+            89438 -545660
+          )
+        )
+        (via "Via[0-3]_600:300_um" 102730 -545660
+        )
+        (wire
+          (path F.Cu 4000
+            150000 -40000
+            31687 -158313
+            31687 -487909
+            89438 -545660
+            102730 -545660
+          )
+        )
+      )
+      (net SCL
+        (wire
+          (path F.Cu 4000
+            300000 -190800
+            160369 -330431
+            160369 -444031
+            133976 -470424
+            133976 -494176
+            134800 -495000
+          )
+        )
+        (wire
+          (path B.Cu 4000
+            300000 -190800
+            303891 -186909
+            521598 -186909
+            529396 -194707
+            529396 -236804
+            516200 -250000
+          )
+        )
+      )
+      (net SDA
+        (wire
+          (path F.Cu 4000
+            141993 -480857
+            173967 -448883
+            173967 -342233
+            300000 -216200
+          )
+        )
+        (via "Via[0-3]_600:300_um" 141993 -480857
+        )
+        (wire
+          (path B.Cu 4000
+            109400 -495000
+            123543 -480857
+            141993 -480857
+          )
+        )
+        (wire
+          (path B.Cu 4000
+            300000 -216200
+            500000 -216200
+            516200 -200000
+          )
+        )
+      )
+      (net IMU_INT
+        (wire
+          (path F.Cu 4000
+            160200 -495000
+            183460 -471740
+            183460 -434340
+            300000 -317800
+          )
+        )
+      )
+      (net PWM3
+        (wire
+          (path B.Cu 4000
+            67539 -510900
+            67539 -523754
+            78281 -534496
+            196904 -534496
+            211000 -520400
+          )
+        )
+        (wire
+          (path F.Cu 4000
+            67539 -508709
+            67539 -510900
+          )
+        )
+        (via "Via[0-3]_600:300_um" 67539 -510900
+        )
+        (wire
+          (path F.Cu 4000
+            390000 -40000
+            375776 -40000
+            123989 -291787
+            123989 -379211
+            67539 -435661
+            67539 -508709
+          )
+        )
+      )
+      (net +3V3
+        (wire
+          (path B.Cu 4000
+            316509 -398315
+            316509 -405868
+            249537 -472840
+            106160 -472840
+            84000 -495000
+          )
+        )
+        (wire
+          (path F.Cu 4000
+            316509 -405868
+            316509 -398315
+          )
+        )
+        (wire
+          (path F.Cu 4000
+            316509 -398315
+            316509 -405868
+          )
+        )
+        (wire
+          (path F.Cu 4000
+            440000 -250000
+            316509 -373491
+            316509 -398315
+          )
+        )
+        (wire
+          (path F.Cu 4000
+            440000 -236403
+            440000 -225827
+          )
+        )
+        (wire
+          (path F.Cu 4000
+            440000 -250000
+            440000 -236403
+          )
+        )
+        (wire
+          (path F.Cu 4000
+            440000 -225827
+            440000 -225000
+          )
+        )
+        (via "Via[0-3]_600:300_um" 316509 -398315
+        )
+        (wire
+          (path F.Cu 4000
+            440000 -225000
+            440000 -200000
+          )
+        )
+      )
+      (net PWM2
+        (wire
+          (path F.Cu 4000
+            270000 -40000
+            283517 -40000
+          )
+        )
+        (wire
+          (path F.Cu 4000
+            283517 -40000
+            297034 -26483
+            400593 -26483
+            490400 -116290
+            490400 -495000
+          )
+        )
+      )
+      (net PWM4
+        (wire
+          (path F.Cu 4000
+            510000 -40000
+            529245 -59245
+            529245 -481555
+            515800 -495000
+          )
+        )
+      )
+      (net LED_DRV
+        (wire
+          (path B.Cu 4000
+            440000 -300000
+            580614 -440614
+            580614 -526131
+            572399 -534346
+            529746 -534346
+            515800 -520400
+          )
+        )
+      )
+      (net LED_A
+        (wire
+          (path B.Cu 4000
+            585400 -300000
+            571184 -285784
+            530416 -285784
+            516200 -300000
+          )
+        )
+      )
+      (net BEC_IN
+        (wire
+          (path B.Cu 4000
+            50000 -320000
+            112548 -382548
+            224148 -382548
+            241600 -400000
+          )
+        )
+      )
+    )
+  )
+)

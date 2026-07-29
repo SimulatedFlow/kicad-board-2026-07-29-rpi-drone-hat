@@ -1,0 +1,9 @@
+{
+  "board_name": "RPi-DroneRover-HAT",
+  "one_liner": "Raspberry-Pi-HAT fuer grosse Drohnen/Rover: 40-pin Pi-Header, IMU-Modulsockel, 4x ESC/Servo-PWM-Ausgaenge, BEC-5V-Einspeisung, Buzzer und Status-LED - handloetbar.",
+  "market_gap": "Guenstiger, komplett THT-handloetbarer Raspberry-Pi-Aufsteckhut fuer groessere Drohnen/Rover mit Companion-Computer: Pi aufstecken, IMU-Modul + 4 ESCs anstecken, ueber BEC versorgen. Grosszuegig, Beispiel-Software.",
+  "confidence": "medium",
+  "price_eur": 21,
+  "target_enclosure": "65x56mm Raspberry-Pi-HAT-Format",
+  "injection_notes": "keine"
+}

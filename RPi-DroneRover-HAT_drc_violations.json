@@ -1,0 +1,138 @@
+{
+  "board": "F:\\KiCad Projects\\BluepillBoards\\_BoardIdeas\\2026-07-29-rpi-drone-hat\\RPi-DroneRover-HAT.kicad_pcb",
+  "timestamp": "2026-07-29T23:15:12",
+  "total_violations": 12,
+  "violation_counts": {
+    "track_dangling": 2,
+    "lib_footprint_issues": 4,
+    "silk_overlap": 1,
+    "silk_over_copper": 5
+  },
+  "severity_counts": {
+    "error": 0,
+    "warning": 12,
+    "info": 0
+  },
+  "violations": [
+    {
+      "type": "track_dangling",
+      "severity": "warning",
+      "message": "Track has unconnected end",
+      "location": {
+        "x": 8.9438,
+        "y": 54.566,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "track_dangling",
+      "severity": "warning",
+      "message": "Track has unconnected end",
+      "location": {
+        "x": 31.6509,
+        "y": 40.5868,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "lib_footprint_issues",
+      "severity": "warning",
+      "message": "Footprint \"MountingHole_2.75mm\" nicht in Bibliothek \"MountingHole\" gefunden.",
+      "location": {
+        "x": 61.5,
+        "y": 3.5,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "lib_footprint_issues",
+      "severity": "warning",
+      "message": "Footprint \"MountingHole_2.75mm\" nicht in Bibliothek \"MountingHole\" gefunden.",
+      "location": {
+        "x": 61.5,
+        "y": 52.5,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "lib_footprint_issues",
+      "severity": "warning",
+      "message": "Footprint \"MountingHole_2.75mm\" nicht in Bibliothek \"MountingHole\" gefunden.",
+      "location": {
+        "x": 3.5,
+        "y": 52.5,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "lib_footprint_issues",
+      "severity": "warning",
+      "message": "Footprint \"MountingHole_2.75mm\" nicht in Bibliothek \"MountingHole\" gefunden.",
+      "location": {
+        "x": 3.5,
+        "y": 3.5,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_overlap",
+      "severity": "warning",
+      "message": "Silkscreen clearance",
+      "location": {
+        "x": 5.63,
+        "y": 50.77,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_over_copper",
+      "severity": "warning",
+      "message": "Silkscreen clipped by solder mask",
+      "location": {
+        "x": 61.5,
+        "y": 52.5,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_over_copper",
+      "severity": "warning",
+      "message": "Silkscreen clipped by solder mask",
+      "location": {
+        "x": 3.5,
+        "y": 3.5,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_over_copper",
+      "severity": "warning",
+      "message": "Silkscreen clipped by solder mask",
+      "location": {
+        "x": 5.63,
+        "y": 50.77,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_over_copper",
+      "severity": "warning",
+      "message": "Silkscreen clipped by solder mask",
+      "location": {
+        "x": 3.5,
+        "y": 52.5,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_over_copper",
+      "severity": "warning",
+      "message": "Silkscreen clipped by solder mask",
+      "location": {
+        "x": 61.5,
+        "y": 3.5,
+        "unit": "mm"
+      }
+    }
+  ]
+}
