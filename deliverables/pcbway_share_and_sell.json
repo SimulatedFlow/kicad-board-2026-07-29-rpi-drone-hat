@@ -1,0 +1,38 @@
+{
+  "board_slug": "2026-07-29-rpi-drone-hat",
+  "board_name": "RPi-DroneRover-HAT",
+  "kanal": "pcbway-share-and-sell",
+  "status": "vorbereitet_nicht_eingereicht",
+  "vorbereitet_am": "2026-08-02",
+  "verkaeufer": "Simulated Flow UG",
+  "titel": "RPi-DroneRover-HAT — Hand-Solderable Raspberry Pi HAT for Large Drones & Rovers",
+  "kategorien": [
+    "Raspberry Pi",
+    "Robotics",
+    "Flight"
+  ],
+  "pitch": "Through-hole Raspberry Pi HAT for big drones and rovers: 40-pin Pi header, IMU socket, 4x ESC/servo PWM, 5V BEC input.",
+  "pitch_len": 118,
+  "beschreibung": "RPi-DroneRover-HAT — Raspberry Pi HAT for large drones and rovers\n\nA fully through-hole, hand-solderable HAT that turns a Raspberry Pi into the flight/drive controller of a large quadcopter or rover. Plug the Pi in, add a GY-521 IMU module and up to four ESCs or servos, feed it from your BEC — done. Every part is THT, so it assembles with a basic soldering iron: no hot air, no BGA, no stencil.\n\nFeatures\n- 65 x 56 mm standard Raspberry Pi HAT outline, 4x M2.5 mounting holes\n- 2x20 female header for the 40-pin Pi GPIO connector\n- Socket for a GY-521 / MPU-6050 6-axis IMU module (I2C, 4k7 pull-ups on board)\n- 4x 3-pin ESC / servo PWM outputs (signal + 5V + GND) along the top edge\n- 5V BEC input on a screw terminal, reverse-polarity protection (1N5819)\n- 470 uF bulk + 100 nF decoupling, buzzer header, status LED with 330 R series resistor\n- 4-layer stackup: signal / solid GND plane / +5V plane / signal — quiet supply, EMC-friendly\n- 15 BOM positions, all standard KiCad footprints, DRC clean (0 errors)\n\nWhat you get\nGerbers and drill file (PCBWay-ready), BOM as CSV, schematic PDF and example firmware. Project home: https://github.com/SimulatedFlow\n\nSold as a bare or partially populated PCB — you add the Pi, the IMU module and the connectors. Made to order, shipped from Germany by Simulated Flow UG. Open-source hardware for makers, education and hobby use; not a certified consumer product.",
+  "beschreibung_len": 1406,
+  "gerber_download": "Allowed",
+  "lizenz": "CC BY-SA (Default, Dropdown nicht per <select> setzbar)",
+  "dateien": {
+    "gerber_zip_nth0": "F:\\KiCad Projects\\BluepillBoards\\_BoardIdeas\\2026-07-29-rpi-drone-hat\\deliverables\\RPi-DroneRover-HAT_PCBWay_gerbers.zip",
+    "cover_nth1": "F:\\KiCad Projects\\BluepillBoards\\_BoardIdeas\\2026-07-29-rpi-drone-hat\\deliverables\\render_top.png",
+    "realshot_nth4": "F:\\KiCad Projects\\BluepillBoards\\_BoardIdeas\\2026-07-29-rpi-drone-hat\\deliverables\\render_bottom.png"
+  },
+  "verifiziert": {
+    "built_marker": "2026-07-29T23:16:03",
+    "gerber_zip_bytes": 93752,
+    "gerber_dateien": 28,
+    "lagen": 4,
+    "abmessung_mm": [
+      65.0,
+      56.0
+    ],
+    "drc_errors": 0,
+    "drc_warnings": 12,
+    "bom_positionen": 15
+  }
+}
