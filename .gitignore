@@ -10,3 +10,5 @@ fp-info-cache
 run_build.cmd
 *.lck
 ~*
+
+deliverables/pcbway_share_and_sell.md
